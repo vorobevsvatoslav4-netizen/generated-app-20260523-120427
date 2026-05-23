@@ -1,6 +1,6 @@
 # TeleVault - Minimalist Telegram Account Marketplace
 
-[aureliabutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fvorobevsvatoslav4-netizen%2Fgenerated-app-20260523-120427)
 
 TeleVault is a premium, minimalist marketplace specifically designed for the secure acquisition of Telegram accounts. Built with a focus on "Zero Friction," it provides a sleek, distraction-free environment for users to browse, fund, and purchase verified Telegram sessions with instant delivery.
 
@@ -73,7 +73,7 @@ To deploy your application manually to Cloudflare:
 bun run deploy
 ```
 
-[aureliabutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fvorobevsvatoslav4-netizen%2Fgenerated-app-20260523-120427)
 
 ## 📝 License
 
