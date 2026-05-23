@@ -1,0 +1,11 @@
+/* Aggressive minimalist styling */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

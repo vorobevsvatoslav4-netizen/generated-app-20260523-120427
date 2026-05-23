@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* Baseline Light Theme - High Contrast Professional */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --primary: 199 89% 48%; /* Telegram Blue #24A1DE */
+    --primary-foreground: 0 0% 100%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --border: 214.3 31.8% 91.4%;
+    --ring: 199 89% 48%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --input: 214.3 31.8% 91.4%;
+    --radius: 1.25rem;
+  }
+  /* High Contrast Overrides for Light Theme Only - Ensuring absolute visibility */
+  html:not(.dark) {
+    --foreground: 222 47% 1% !important;
+    --muted-foreground: 215 16% 15% !important;
+    --border: 214 32% 30% !important;
+    --input: 214 32% 30% !important;
+  }
+  /* Deep Zen Dark Theme - Original Stable Slate Roots */
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 213 31% 91%;
+    --muted: 223 47% 15%;
+    --muted-foreground: 215 20% 65%;
+    --border: 217 32% 17%;
+    --card: 222 47% 12%;
+    --card-foreground: 213 31% 91%;
+    --popover: 222 47% 12%;
+    --popover-foreground: 213 31% 91%;
+    --secondary: 223 47% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --input: 217 32% 17%;
+    --ring: 199 89% 48%;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+@layer utilities {
+  .bg-telegram {
+    background: linear-gradient(135deg, #24A1DE 0%, #1c82b3 100%);
+  }
+  .glass-effect {
+    @apply backdrop-blur-2xl bg-white/60 dark:bg-white/[0.02] shadow-2xl border-2 border-border;
+  }
+  .zen-shadow {
+    @apply shadow-xl shadow-primary/5 dark:shadow-none;
+    box-shadow: 0 0 50px -12px rgba(36, 161, 222, 0.15);
+  }
+  .text-glow {
+    text-shadow: 0 0 15px rgba(36, 161, 222, 0.4);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
